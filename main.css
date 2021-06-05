@@ -242,6 +242,7 @@ nav ul li a {
   width: 100%;
   padding: 70px 0;
   background: #efefef;
+  margin-bottom: 2rem;
 }
 
 .service-box {
@@ -323,4 +324,75 @@ hr {
   /* .single-service:hover .service-desc {
     bottom: 30% !important;
   } */
+}
+
+ 
+/* ====== Testimonials ====== */
+
+#testimonial {
+  width: 100%;
+  padding: 70% 0;
+}
+ 
+ 
+.testimonial-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.testimonial-col {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 30px #f4f4f4;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.testimonial-col p {
+  font-size: 14px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.user img {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.user-info {
+  margin-left: 10px;
+  color: #27c0ff;
+  font-size: 20px;
+}
+
+.user-info small {
+  color: var(--primary-clr);
+  font-size: 13px;
+}
+
+.user-info h4 {
+  font-size: 17px;
+}
+
+.testimonial-col:hover {
+  transform: translateY(-7px);
+}
+
+@media screen and (max-width: 770px){ 
+
+  .testimonial-col {
+    flex-basis: 100%;
+  }
+
 }
