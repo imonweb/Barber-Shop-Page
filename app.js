@@ -14,3 +14,19 @@ menuBtn.addEventListener('click', () => {
     menu.src = "images/menu.png";
   }
 })
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+
+ 
+/* ====== Loader ====== */
+
+const loader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+  loader.style.display = "none";
+});
+ 
